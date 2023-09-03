@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Subscription Card</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div class="flex justify-center items-center min-h-screen bg-gray-300">
+    <div class="shadow-xl rounded-2xl w-1/2 flex flex-col md:flex-row bg-white">
+      <!-- color part -->
+      <div class="bg-purple-700 border border-zinc-600 w-1/2 rounded-l-2xl"></div>
+      <!-- Right side of the card -->
+      <div class="pl-10 pr-16 py-6 relative">
+        <!-- upper part of the right card -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 absolute top-5 right-5 cursor-pointer"
+          viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+          stroke-linejoin="round" onclick="this.parentElement.style.display = 'none';" <!-- Add this line to make it
+          dismiss when clicked -->
+          >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+
+        <div class="mt-12">
+          <h2 class="text-3xl text-purple-800 font-semibold">Stay up to date with useful tips via our newsletter.</h2>
+          <p class="text-gray-500 pt-2 text-left text-lg tracking-tight">Subscribe to our newsletter and get the best
+            news and tips or the
+            industry for your daily workflow.
+          </p>
+        </div>
+        <!-- lower side of the lower card -->
+        <div class="flex flex-col mt-12 items-center">
+          <input type="text" placeholder="Your Email Address"
+            class=" rounded-lg  border shadow-md w-full p-2 mb-4 focus:outline-none">
+          <button
+            class="inline-block p-2 border w-full bg-purple-700 text-white rounded-lg hover:bg-purple-800 duration-200 hover:border-purple-600">Subscribe</button>
+          <span class="text-gray-500 mt-2">We won't spam you👍 </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
