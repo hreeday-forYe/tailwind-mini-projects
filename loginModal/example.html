@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Modal another Example</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="flex justify-center items-center min-h-screen bg-cyan-900">
+    <!-- Container as in Card -->
+    <div class="shadow-xl bg-white rounded-2xl">
+      <!-- left right contents div -->
+      <div class="flex flex-col space-y-4 m-4 p-2 md:space-y-0 md:space-x-4 md:flex-row">
+        <!-- left side content -->
+        <div class="my-8 flex flex-col  md:space-y-[3rem] mx-4 md:mt-16 md:mx-10 w-[360px]">
+          <!-- top content -->
+          <div>
+            <h2 class="text-cyan-900 font-bold text-4xl">Stay updated!</h2>
+            <p class="mt-4 text-gray-600">Join 60,000+ produce managers receiving monthly updates on</p>
+          </div>
+          <!-- middle content -->
+          <div class="mt-10 flex flex-col space-y-2">
+            <div class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ea8585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8l4 4-4 4M8 12h7"/></svg>
+              <p>Product discovery and building what matters</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ea8585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8l4 4-4 4M8 12h7"/></svg>
+              <p>Measuring to ensure updates are a success</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ea8585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8l4 4-4 4M8 12h7"/></svg>
+              <p>And much more!</p>
+            </div>
+          </div>
+          <!-- below content -->
+          <div class="flex flex-col mt-4">
+            <h4 class="text-lg font-medium text-cyan-900">Email Address</h4>
+            <input type="text" placeholder="johndoe@gmail.com" class="text-light p-4 my-4 font-light placeholder:font-light border-gray-300 border focus:border-blue-100 font-md focus:outline-none focus:-translate-y-0.5 focus:shadow-md  transition duration-150 focus:font-lg rounded-lg">
+            <button class="w-full bg-cyan-900 p-4 text-white hover:bg-opacity-98 hover:-translate-y-0.5 hover:shadow-2xl font-2xl transition duration-150 rounded-lg">Subscribe to monthly Newsletter</button>
+          </div>
+        </div>
+        <!-- Image -->
+        <img src="images/example.jpg" alt="Nothing" class="w-[430px] hidden md:block">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
